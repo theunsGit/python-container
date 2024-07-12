@@ -50,7 +50,7 @@ def index():
 def apiDoc():
     retval = {
         "schema":{
-            "name":"text"
+            "name":"text",
         }
     }
     return retval
