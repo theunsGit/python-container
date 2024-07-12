@@ -46,7 +46,14 @@ def index():
     print('Request for index page received')
     restaurants = Restaurant.query.all()    
     return render_template('index.html', restaurants=restaurants)
-
+@app.route('/apidoc',methods=['GET'])
+def apiDoc():
+    retval = {
+        "schema":{
+            "name":"text"
+        }
+    }
+    return retval
 @app.route('/<int:id>', methods=['GET'])
 def details(id):
     return details(id,'')
