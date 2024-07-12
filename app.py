@@ -51,6 +51,7 @@ def apiDoc():
     retval = {
         "schema":{
             "name":"text",
+            "domain":"choc"
         }
     }
     return retval
